@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		905513AE26B4768F00C942FB /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905513AD26B4768F00C942FB /* Question.swift */; };
+		905513B026B479E300C942FB /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905513AF26B479E300C942FB /* QuestionManager.swift */; };
 		AD4BDE4A22D878BA005BA4CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BDE4922D878BA005BA4CC /* AppDelegate.swift */; };
 		AD4BDE4C22D878BA005BA4CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BDE4B22D878BA005BA4CC /* SceneDelegate.swift */; };
 		AD4BDE4E22D878BA005BA4CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BDE4D22D878BA005BA4CC /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		905513AD26B4768F00C942FB /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		905513AF26B479E300C942FB /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
 		AD4BDE4622D878BA005BA4CC /* Quizzler-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quizzler-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4BDE4922D878BA005BA4CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD4BDE4B22D878BA005BA4CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		905513AA26B4764F00C942FB /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD4BDE4922D878BA005BA4CC /* AppDelegate.swift */,
+				AD4BDE4D22D878BA005BA4CC /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		905513AB26B4766E00C942FB /* view */ = {
+			isa = PBXGroup;
+			children = (
+				AD4BDE4B22D878BA005BA4CC /* SceneDelegate.swift */,
+				AD4BDE4F22D878BA005BA4CC /* Main.storyboard */,
+				AD4BDE5422D878BC005BA4CC /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		905513AC26B4767B00C942FB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				905513AD26B4768F00C942FB /* Question.swift */,
+				905513AF26B479E300C942FB /* QuestionManager.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		AD4BDE3D22D878BA005BA4CC = {
 			isa = PBXGroup;
 			children = (
@@ -59,12 +91,10 @@
 		AD4BDE4822D878BA005BA4CC /* Quizzler-iOS13 */ = {
 			isa = PBXGroup;
 			children = (
-				AD4BDE4922D878BA005BA4CC /* AppDelegate.swift */,
-				AD4BDE4B22D878BA005BA4CC /* SceneDelegate.swift */,
-				AD4BDE4F22D878BA005BA4CC /* Main.storyboard */,
-				AD4BDE4D22D878BA005BA4CC /* ViewController.swift */,
+				905513AC26B4767B00C942FB /* model */,
+				905513AB26B4766E00C942FB /* view */,
+				905513AA26B4764F00C942FB /* controller */,
 				AD4BDE5222D878BC005BA4CC /* Assets.xcassets */,
-				AD4BDE5422D878BC005BA4CC /* LaunchScreen.storyboard */,
 				AD4BDE5722D878BC005BA4CC /* Info.plist */,
 			);
 			path = "Quizzler-iOS13";
@@ -143,7 +173,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD4BDE4E22D878BA005BA4CC /* ViewController.swift in Sources */,
+				905513AE26B4768F00C942FB /* Question.swift in Sources */,
 				AD4BDE4A22D878BA005BA4CC /* AppDelegate.swift in Sources */,
+				905513B026B479E300C942FB /* QuestionManager.swift in Sources */,
 				AD4BDE4C22D878BA005BA4CC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,12 +321,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G52UQ7CNCZ;
 				INFOPLIST_FILE = "Quizzler-iOS13/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.appbrewery.Quizzler-iOS13";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tramalho.Quizzler-iOS13";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,12 +339,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G52UQ7CNCZ;
 				INFOPLIST_FILE = "Quizzler-iOS13/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.appbrewery.Quizzler-iOS13";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tramalho.Quizzler-iOS13";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
